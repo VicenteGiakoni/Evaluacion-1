@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion 1</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header>
+    <P>Game Story</P>
+    <menu>
+        <button onclick="ShowMenus(about)"> Sobre la pagina</button>
+        <button onclick="ShowMenus(stories)"> Ver historias</button>
+        <button onclick="ShowMenus(create)"> Agrega tu historia</button>
+    </menu>
+</header>
+<main id="stories" class="ocultar">
+    <article class="storyslot">
+        <figure class="storyimg"><img src="/assets/img/MHWilds_caratula.jpg" alt=""></figure>
+        <em class="storytitle">Monster Hunter:Wilds Me cambio la vida</em>
+    </article>
+    
+    <article class="storyslot">
+        <figure class="storyimg"><img src="" alt=""></figure>
+        <em class="storytitle">Texto de Titulo</em>
+    </article>
+
+</main>
+<main id="about">
+    <h6>De que trata esta pagina?</h6>
+    <p>Muchas paginas se dedica a la "critica especializada de videojuegos", pero pocas se dedican a lo que realmente importa. lo que vivimos en un videojuego son historias que nos marcan, por muy bueno o malo o incluso mediocre que sea el juego, siempre va a haber una anecdota u historia que contar que hace nuestra experiencie mas unica y inolvidable, esta pagina se quiere dedicar a compartir estas historias, ya sea una anecdota chistosa con amigos, hasta enseñanzas con las que te hayas quedado. </p>
+</main>
+<main id="create" class="ocultar">
+    <p>Usuario </p>
+    <input type="text" id="Usuario">
+    <p>Titulo</p>
+    <input type="text" id="Texto">
+    <p>Escribe tu historia</p>
+    <textarea name="LaHisotoria" id="LaHistoria"></textarea>
+    <button onclick="SaveCustomStory(Usuario,Texto,LaHistoria)">Enviar</button>
+    <article id="showcustom">
+
+    </article>
+</main>
+
+<script src="/assets/JS/script.js"></script>
+</body>
+</html>
